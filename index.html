@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Password Game HARD MODE</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <br><br><br><br>
+  <div id="imageContainer">
+  <img src="passwordGameHard.png" id="introImage">
+  </div>
+  <br><br>
+  <div id="gameContainer">
+    <p id="passwordChooseText">Please choose a password</p>
+      <div autofocus contentEditable="true" id="passwordInput" translate="no" spellcheck="false">
+      </div>
+    <p id="passwordLength"></p>
+    <br>
+    <div id="noMobile">
+      <div id="noMobileHeadingBox"><img src="cross.svg" class="ruleImage"> Rule 1</div>
+      <div id="noMobileBottomBox">Your password must not be created on a mobile device.</div>
+    </div>
+
+    <div id="deathScreen">
+      <div id="deathScreenStrip">Chrono has died</div>
+    </div>
+
+    <div id="ruleContainer">
+
+      <div id="rule22" class="rules">
+      <div class="ruleTop" id="rule22Top"><img src="cross.svg" id="rule22Image" class="ruleImage"> Rule 22</div>
+      <div class="ruleBottom" id="rule22Bottom">Your password must include 31536000 seconds in years.</div>
+      </div>
+
+      <div id="rule21" class="rules">
+      <div class="ruleTop" id="rule21Top"><img src="cross.svg" id="rule21Image" class="ruleImage"> Rule 21</div>
+      <div class="ruleBottom" id="rule21Bottom">The Unicode values of the special characters in your password must add up to 250,000.</div>
+      </div>
+
+      <div id="rule20" class="rules">
+      <div class="ruleTop" id="rule20Top"><img src="cross.svg" id="rule20Image" class="ruleImage"> Rule 20</div>
+      <div class="ruleBottom" id="rule20Bottom">Oh no! A time bomb has dropped on your password! This will revert your password back to 0.6 seconds ago every 0.6 seconds, will remove all styles, and will set your cursor back to the first character. It can only be deleted when the clock is at 12:00.</div>
+      </div>
+
+      <div id="rule19" class="rules">
+      <div class="ruleTop" id="rule19Top"><img src="cross.svg" id="rule19Image" class="ruleImage"> Rule 19</div>
+      <div class="ruleBottom" id="rule19Bottom">All consonants in your password must be bolded, and all other characters must not be bolded.<br>(You don't get a text editor)</div>
+      </div>
+
+      <div id="rule18" class="rules">
+      <div class="ruleTop" id="rule18Top"><img src="cross.svg" id="rule18Image" class="ruleImage"> Rule 18</div>
+      <div class="ruleBottom" id="rule18Bottom">The elements in your password (excluding Hydrogen) must add up to 397.</div>
+      </div>
+
+      <div id="rule17" class="rules">
+      <div class="ruleTop" id="rule17Top"><img src="cross.svg" id="rule17Image" class="ruleImage"> Rule 17</div>
+      <div class="ruleBottom" id="rule17Bottom">🥚 ← This is my dragon Chrono. He hasn't hatched yet, please put him in your password and keep him safe.</div>
+      </div>
+
+      <div id="rule16" class="rules">
+      <div class="ruleTop" id="rule16Top"><img src="cross.svg" id="rule16Image" class="ruleImage"> Rule 16</div>
+      <div class="ruleBottom" id="rule16Bottom">Your password must contain this Unicode character:</div>
+        <div id="rule16Unicode"></div>
+      </div>
+
+      <div id="rule15" class="rules">
+      <div class="ruleTop" id="rule15Top"><img src="cross.svg" id="rule15Image" class="ruleImage"> Rule 15</div>
+      <div class="ruleBottom" id="rule15Bottom">Your password must contain the BPM of this song: <br>(It only plays once, don't miss it!)</div>
+      </div>
+
+      <div id="rule14" class="rules">
+      <div class="ruleTop" id="rule14Top"><img src="cross.svg" id="rule14Image" class="ruleImage"> Rule 14</div>
+      <div class="ruleBottom" id="rule14Bottom">Your password must contain the name of this town:</div>
+        <img id="rule14Town" src="rule14/llanfair.webp">
+      </div>
+
+      <div id="rule13" class="rules">
+      <div class="ruleTop" id="rule13Top"><img src="cross.svg" id="rule13Image" class="ruleImage"> Rule 13</div>
+      <div class="ruleBottom" id="rule13Bottom">Your password must contain the answer to this equation rounded to 3 decimals:</div>
+        <div id=rule13Equation></div>
+      </div>
+
+      <div id="rule12" class="rules">
+      <div class="ruleTop" id="rule12Top"><img src="cross.svg" id="rule12Image" class="ruleImage"> Rule 12</div>
+      <div class="ruleBottom" id="rule12Bottom">The first and last character of your password must be the same.</div>
+      </div>
+
+      <div id="rule11" class="rules">
+      <div class="ruleTop" id="rule11Top"><img src="cross.svg" id="rule11Image" class="ruleImage"> Rule 11</div>
+      <div class="ruleBottom" id="rule11Bottom">Your password must contain the current phase of the moon.</div>
+      </div>
+
+      <div id="rule10" class="rules">
+      <div class="ruleTop" id="rule10Top"><img src="cross.svg" id="rule10Image" class="ruleImage"> Rule 10</div>
+      <div class="ruleBottom" id="rule10Bottom">Your password must contain a 2 letter symbol from the periodic table.</div>
+    </div>
+      
+    <div id="rule9" class="rules">
+      <div class="ruleTop" id="rule9Top"><img src="cross.svg" id="rule9Image" class="ruleImage"> Rule 9</div>
+      <div class="ruleBottom" id="rule9Bottom">The roman numerals in your password must multiply to 107.</div>
+    </div>
+
+    <div id="rule8" class="rules">
+      <div class="ruleTop" id="rule8Top"><img src="cross.svg" id="rule8Image" class="ruleImage"> Rule 8</div>
+      <div class="ruleBottom" id="rule8Bottom">Your password must contain this round's sponsor:</div>
+      <img id="rule8Sponsor">
+    </div>
+
+    <div id="rule7" class="rules">
+      <div class="ruleTop" id="rule7Top"><img src="cross.svg" id="rule7Image" class="ruleImage"> Rule 7</div>
+      <div class="ruleBottom" id="rule7Bottom">Your password must contain a roman numeral.</div>
+    </div>
+
+    <div id="rule6" class="rules">
+      <div class="ruleTop" id="rule6Top"><img src="cross.svg" id="rule6Image" class="ruleImage"> Rule 6</div>
+      <div class="ruleBottom" id="rule6Bottom">The length of your password must not exceed 256 characters.</div>
+    </div>
+
+    <div id="rule5" class="rules">
+      <div class="ruleTop" id="rule5Top"><img src="cross.svg" id="rule5Image" class="ruleImage"> Rule 5</div>
+      <div class="ruleBottom" id="rule5Bottom">The digits in your password must add up to 53.</div>
+    </div>
+
+    <div id="rule4" class="rules">
+      <div class="ruleTop" id="rule4Top"><img src="cross.svg" id="rule4Image" class="ruleImage"> Rule 4</div>
+      <div class="ruleBottom" id="rule4Bottom">Your password must contain a special character.</div>
+    </div>
+
+    <div id="rule3" class="rules">
+      <div class="ruleTop" id="rule3Top"><img src="cross.svg" id="rule3Image" class="ruleImage"> Rule 3</div>
+      <div class="ruleBottom" id="rule3Bottom">Your password must contain a capital letter.</div>
+    </div>
+    
+    <div id="rule2" class="rules">
+      <div class="ruleTop" id="rule2Top"><img src="cross.svg" id="rule2Image" class="ruleImage"> Rule 2</div>
+      <div class="ruleBottom" id="rule2Bottom">Your password must contain a number.</div>
+    </div>
+    
+    <div id="rule1" class="rules">
+      <div class="ruleTop" id="rule1Top"><img src="cross.svg" id="rule1Image" class="ruleImage"> Rule 1</div>
+      <div class="ruleBottom" id="rule1Bottom">Your password must be at least 6 characters long.</div>
+    </div>
+  </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
