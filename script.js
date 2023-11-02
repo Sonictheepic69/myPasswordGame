@@ -21,6 +21,7 @@ let rule17_dragonState;
 let rule17_replacedOnce;
 let rule20_deletedTimeOnce;
 let rule20_timeAdded;
+let rule23_dragonFedOnce;
 
 function setGreen(rule) {
   let ruleId = "rule" + rule;
@@ -1175,6 +1176,15 @@ const normalize = value => {
     }
 
     if (currentTotalUnicode === 250000) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function rule23_getDragonFedOnce() {
+    if (passwordNoNewLine.includes("🍖") && !rule23_dragonFedOnce) {
+      rule23_dragonFedOnce = true;
       return true;
     } else {
       return false;
