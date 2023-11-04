@@ -1393,4 +1393,13 @@ const normalize = value => {
   } else {
     setRed(22);
   }
+
+  if (currentRule >= 23 && rule23_getDragonFedOnce()) { // rule 23
+    setGreen(23);
+    if (currentRule == 23 && checkRules()) {
+      addRule(24)
+    }
+  } else {
+    setRed(23);
+  }
 });
